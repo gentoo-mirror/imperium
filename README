@@ -1,0 +1,9 @@
+Imperium
+--------
+Imperium packaging for Gentoo.
+
+Usage
+-----
+run as root:
+
+	eselect repository add imperium git https://gitlab.com/HansvonHohenstaufen/imperium.git
