@@ -10,14 +10,14 @@ MY_P=python-${P}
 
 inherit distutils-r1
 
-DESCRIPTION="simple fast compiler helper"
-HOMEPAGE="https://gitlab.com/HansvonHohenstaufen/scompiler"
+DESCRIPTION="simple update gentoo"
+HOMEPAGE="https://gitlab.com/HansvonHohenstaufen/updategentoo"
 SRC_URI="
-	https://gitlab.com/HansvonHohenstaufen/scompiler/-/archive/v1.0/scompiler-v1.0.tar.gz
+	https://gitlab.com/HansvonHohenstaufen/updategentoo/-/archive/v2.0/updategentoo-v2.0.tar.gz
 		-> ${MY_P}.tar.gz
 "
 
-S="${WORKDIR}/scompiler-v1.0"
+S="${WORKDIR}/updategentoo-v2.0"
 
 LICENSE="MIT"
 SLOT="0"
@@ -26,7 +26,3 @@ KEYWORDS="amd64"
 DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
-
-PATCHES=(
-	"${FILESDIR}/${P}-build.patch"
-)
