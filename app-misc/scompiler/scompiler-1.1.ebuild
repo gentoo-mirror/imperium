@@ -13,11 +13,11 @@ inherit distutils-r1
 DESCRIPTION="simple fast compiler helper"
 HOMEPAGE="https://gitlab.com/HansvonHohenstaufen/scompiler"
 SRC_URI="
-	https://gitlab.com/HansvonHohenstaufen/scompiler/-/archive/v1.0/scompiler-v1.0.tar.gz
+	https://gitlab.com/HansvonHohenstaufen/scompiler/-/archive/v1.1/scompiler-v1.1.tar.gz
 		-> ${MY_P}.tar.gz
 "
 
-S="${WORKDIR}/scompiler-v1.0"
+S="${WORKDIR}/scompiler-v1.1"
 
 LICENSE="MIT"
 SLOT="0"
@@ -26,7 +26,3 @@ KEYWORDS="amd64"
 DEPEND=""
 RDEPEND="${DEPEND}"
 BDEPEND=""
-
-PATCHES=(
-	"${FILESDIR}/${P}-build.patch"
-)
