@@ -10,7 +10,7 @@ MY_P=python-${P}
 
 inherit distutils-r1
 
-DESCRIPTION="simple update gentoo"
+DESCRIPTION="Simple update gentoo"
 HOMEPAGE="https://gitlab.com/HansvonHohenstaufen/updategentoo"
 SRC_URI="
 	https://gitlab.com/HansvonHohenstaufen/updategentoo/-/archive/v2.0/updategentoo-v2.0.tar.gz
@@ -23,6 +23,6 @@ LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64"
 
-DEPEND=""
+DEPEND="app-portage/gentoolkit"
 RDEPEND="${DEPEND}"
 BDEPEND=""

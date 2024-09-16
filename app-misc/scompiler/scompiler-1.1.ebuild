@@ -10,7 +10,7 @@ MY_P=python-${P}
 
 inherit distutils-r1
 
-DESCRIPTION="simple fast compiler helper"
+DESCRIPTION="Simple fast compiler helper"
 HOMEPAGE="https://gitlab.com/HansvonHohenstaufen/scompiler"
 SRC_URI="
 	https://gitlab.com/HansvonHohenstaufen/scompiler/-/archive/v1.1/scompiler-v1.1.tar.gz
