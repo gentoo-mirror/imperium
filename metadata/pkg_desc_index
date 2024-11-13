@@ -1,5 +1,5 @@
 app-misc/scompiler 1.1: Simple fast compiler helper
-app-portage/updategentoo 2.1 2.2: Simple update gentoo
+app-portage/updategentoo 2.2: Simple update gentoo
 x11-misc/notify 2.1: Simple notification daemon
 x11-misc/sent 1.0.1: My fork from suckless sent
-x11-wm/dwm 6.5: 
+x11-wm/dwm 6.5: My fork from suckless dwm
