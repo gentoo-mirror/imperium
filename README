@@ -4,6 +4,10 @@ Imperium packaging for Gentoo.
 
 Usage
 -----
-run as root:
+Run as root:
+
+	eselect repository enable imperium
+
+Or manually.
 
 	eselect repository add imperium git https://gitlab.com/HansvonHohenstaufen/imperium.git

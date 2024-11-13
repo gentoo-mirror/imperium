@@ -14,6 +14,7 @@ S="${WORKDIR}/sent-v1.0.1"
 LICENSE="MIT"
 SLOT="10"
 KEYWORDS="amd64"
+RESTRICT="mirror"
 
 DEPEND="
 	media-libs/fontconfig

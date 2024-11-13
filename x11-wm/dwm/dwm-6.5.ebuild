@@ -5,7 +5,7 @@ EAPI=8
 
 inherit savedconfig toolchain-funcs
 
-DESCRIPTION=""
+DESCRIPTION="My fork from suckless dwm"
 HOMEPAGE="https://gitlab.com/HansvonHohenstaufen/dwm"
 SRC_URI="https://gitlab.com/HansvonHohenstaufen/dwm/-/archive/v6.5/dwm-v6.5.tar.gz"
 
@@ -14,6 +14,7 @@ S="${WORKDIR}/dwm-v6.5"
 LICENSE="MIT"
 SLOT="10"
 KEYWORDS="amd64"
+RESTRICT="mirror"
 
 RDEPEND="
 	media-libs/fontconfig

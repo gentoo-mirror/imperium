@@ -22,6 +22,7 @@ S="${WORKDIR}/updategentoo-v2.2"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64"
+RESTRICT="mirror"
 
 DEPEND="app-portage/gentoolkit"
 RDEPEND="${DEPEND}"
