@@ -22,6 +22,7 @@ S="${WORKDIR}/scompiler-v1.1"
 LICENSE="MIT"
 SLOT="0"
 KEYWORDS="amd64"
+RESTRICT="mirror"
 
 DEPEND=""
 RDEPEND="${DEPEND}"

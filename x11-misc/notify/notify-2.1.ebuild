@@ -18,6 +18,7 @@ KEYWORDS="amd64"
 DEPEND="x11-misc/dzen"
 RDEPEND="${DEPEND}"
 BDEPEND="dev-lang/tcc"
+RESTRICT="mirror"
 
 src_prepare() {
 	default
