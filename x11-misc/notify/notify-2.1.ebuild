@@ -13,12 +13,13 @@ S="${WORKDIR}/notify-v2.1"
 
 LICENSE="MIT"
 SLOT="0"
+IUSE="tcc"
 KEYWORDS="amd64"
+RESTRICT="mirror"
 
 DEPEND="x11-misc/dzen"
 RDEPEND="${DEPEND}"
-BDEPEND="dev-lang/tcc"
-RESTRICT="mirror"
+BDEPEND="tcc? ( dev-lang/tcc )"
 
 src_prepare() {
 	default
@@ -29,11 +30,22 @@ src_prepare() {
 		-e '/^  echo/d' \
 		Makefile || die
 
+	if use !tcc; then
+		sed -i \
+			-e "s/ -Os / /" \
+			-e "/^\(LDFLAGS\|CFLAGS\)/{s| = | += |g;s|-s ||g}" \
+			config.mk || die
+	fi
+
 	restore_config config.h
 }
 
 src_compile() {
-	emake CC="tcc"
+	if use tcc; then
+		emake CC="tcc"
+	else
+		emake CC="$(tc-getCC)"
+	fi
 }
 
 src_install() {
