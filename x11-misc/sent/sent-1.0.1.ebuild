@@ -13,6 +13,7 @@ S="${WORKDIR}/sent-v1.0.1"
 
 LICENSE="MIT"
 SLOT="10"
+IUSE="tcc"
 KEYWORDS="amd64"
 RESTRICT="mirror"
 
@@ -26,7 +27,7 @@ DEPEND="
 RDEPEND="${DEPEND}
 	!!x11-misc/sent:0
 "
-BDEPEND="dev-lang/tcc"
+BDEPEND="tcc? ( dev-lang/tcc )"
 
 src_prepare() {
 	default
@@ -37,11 +38,22 @@ src_prepare() {
 		-e '/^  echo/d' \
 		Makefile || die
 
+	if use !tcc; then
+		sed -i \
+			-e "s/ -Os / /" \
+			-e "/^\(LDFLAGS\|CFLAGS\)/{s| = | += |g;s|-s ||g}" \
+			config.mk || die
+	fi
+
 	restore_config config.h
 }
 
 src_compile() {
-	emake CC="tcc"
+	if use tcc; then
+		emake CC="tcc"
+	else
+		emake CC="$(tc-getCC)"
+	fi
 }
 
 src_install() {

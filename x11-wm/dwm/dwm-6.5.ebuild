@@ -13,6 +13,7 @@ S="${WORKDIR}/dwm-v6.5"
 
 LICENSE="MIT"
 SLOT="10"
+IUSE="tcc"
 KEYWORDS="amd64"
 RESTRICT="mirror"
 
@@ -27,7 +28,7 @@ DEPEND="
 	${RDEPEND}
 	x11-base/xorg-proto
 "
-BDEPEND="dev-lang/tcc"
+BDEPEND="tcc? ( dev-lang/tcc )"
 
 src_prepare() {
 	default
@@ -38,11 +39,24 @@ src_prepare() {
 		-e '/^  echo/d' \
 		Makefile || die
 
+	if use !tcc; then
+		sed -i \
+			-e "s/ -Os / /" \
+			-e "/^\(LDFLAGS\|CFLAGS\|CPPFLAGS\)/{s| = | += |g;s|-s ||g}" \
+			-e "/^X11LIB/{s:/usr/X11R6/lib:/usr/$(get_libdir)/X11:}" \
+			-e '/^X11INC/{s:/usr/X11R6/include:/usr/include/X11:}' \
+			config.mk || die
+	fi
+
 	restore_config config.h
 }
 
 src_compile() {
-	emake CC="tcc"
+	if use tcc; then
+		emake CC="tcc"
+	else
+		emake CC="$(tc-getCC)"
+	fi
 }
 
 src_install() {
