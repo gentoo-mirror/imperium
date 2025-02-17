@@ -6,6 +6,6 @@
 		<name>Hans von Hohenstaufen</name>
 	</maintainer>
 	<upstream>
-		<remote-id type="gitlab">HansvonHohenstaufen/standard</remote-id>
+		<remote-id type="gitlab">HansvonHohenstaufen/standardfiles</remote-id>
 	</upstream>
 </pkgmetadata>
