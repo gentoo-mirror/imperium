@@ -13,11 +13,11 @@ inherit distutils-r1
 DESCRIPTION="Simple update gentoo"
 HOMEPAGE="https://gitlab.com/HansvonHohenstaufen/updategentoo"
 SRC_URI="
-	https://gitlab.com/HansvonHohenstaufen/updategentoo/-/archive/v2.2/updategentoo-v2.2.tar.gz
+	https://gitlab.com/HansvonHohenstaufen/updategentoo/-/archive/v3.0/updategentoo-v3.0.tar.gz
 		-> ${MY_P}.tar.gz
 "
 
-S="${WORKDIR}/updategentoo-v2.2"
+S="${WORKDIR}/updategentoo-v3.0"
 
 LICENSE="MIT"
 SLOT="0"
