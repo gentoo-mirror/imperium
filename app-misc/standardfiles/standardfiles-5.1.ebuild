@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_12 )
+PYTHON_COMPAT=( python3_13 )
 
 MY_P=python-${P}
 
@@ -13,11 +13,11 @@ inherit distutils-r1
 DESCRIPTION="Program to convert video, audio and images to standard files"
 HOMEPAGE="https://gitlab.com/HansvonHohenstaufen/standardfiles"
 SRC_URI="
-	https://gitlab.com/HansvonHohenstaufen/standardfiles/-/archive/v5.0/standardfiles-v5.0.tar.gz
+	https://gitlab.com/HansvonHohenstaufen/standardfiles/-/archive/v5.1/standardfiles-v5.1.tar.gz
 		-> ${MY_P}.tar.gz
 "
 
-S="${WORKDIR}/standardfiles-v5.0"
+S="${WORKDIR}/standardfiles-v5.1"
 
 LICENSE="MIT"
 SLOT="0"
