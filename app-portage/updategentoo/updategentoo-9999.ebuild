@@ -4,13 +4,13 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_12 )
+PYTHON_COMPAT=( python3_13 )
 
 MY_P=python-${P}
 
 inherit git-r3 distutils-r1
 
-DESCRIPTION="Simple update gentoo"
+DESCRIPTION="Simple program to update gentoo"
 HOMEPAGE="https://gitlab.com/HansvonHohenstaufen/updategentoo"
 EGIT_REPO_URI="https://gitlab.com/HansvonHohenstaufen/updategentoo"
 EGIT_BRANCH="develop"
