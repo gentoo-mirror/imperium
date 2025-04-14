@@ -5,5 +5,6 @@ app-portage/updategentoo 3.2 9999: Simple program to update gentoo
 x11-misc/notify 2.1: Simple notification daemon
 x11-misc/rtspeccy 23.08: Real time audio spectrum analyzer
 x11-misc/sent 1.0.1: My fork from suckless sent
+x11-misc/srun 0.1: Simple script runner
 x11-terms/st 0.9.2: My fork from suckless st
 x11-wm/dwm 6.5: My fork from suckless dwm
