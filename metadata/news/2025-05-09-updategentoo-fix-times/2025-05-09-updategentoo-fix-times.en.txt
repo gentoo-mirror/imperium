@@ -1,0 +1,19 @@
+Title: Updategentoo fix times
+Author: Hans von Hohenstaufen <Hans.von.Hohenstaufen@protonmail.com>
+Content-Type: text/plain
+Posted: 2025-05-09
+Revision: 1
+News-Item-Format: 1.0
+Display-If-Installed: <app-portage/updategentoo-5.0
+
+Fix times save in updategentoo.
+
+Until version v4.0 in the save time included the download time. For that is
+recommended remove the json save time file.
+
+For remove save time file
+=========================
+
+1. Remove the file.
+
+> rm /var/lib/updategentoo/packages_times.json
