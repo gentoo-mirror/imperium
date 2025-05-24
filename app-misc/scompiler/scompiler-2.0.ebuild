@@ -4,7 +4,7 @@
 EAPI=8
 
 DISTUTILS_USE_PEP517=setuptools
-PYTHON_COMPAT=( python3_12 )
+PYTHON_COMPAT=( python3_13 )
 
 MY_P=python-${P}
 
@@ -13,11 +13,11 @@ inherit distutils-r1
 DESCRIPTION="Simple fast compiler helper"
 HOMEPAGE="https://gitlab.com/HansvonHohenstaufen/scompiler"
 SRC_URI="
-	https://gitlab.com/HansvonHohenstaufen/scompiler/-/archive/v1.1/scompiler-v1.1.tar.gz
+	https://gitlab.com/HansvonHohenstaufen/scompiler/-/archive/v2.0/scompiler-v2.0.tar.gz
 		-> ${MY_P}.tar.gz
 "
 
-S="${WORKDIR}/scompiler-v1.1"
+S="${WORKDIR}/scompiler-v2.0"
 
 LICENSE="MIT"
 SLOT="0"
