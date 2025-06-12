@@ -1,7 +1,7 @@
 app-misc/no-more-secrets 1.0.1: Recreate decrypting text from 1992 movie 'Sneakers'
 app-misc/scompiler 2.0 9999: Simple fast compiler helper
 app-misc/standardfiles 5.1 9999: Program to convert video, audio and images to standard files
-app-portage/updategentoo 5.0 5.1 9999: Simple program to update gentoo
+app-portage/updategentoo 5.0 5.2 9999: Simple program to update gentoo
 x11-misc/notify 2.1: Simple notification daemon
 x11-misc/rtspeccy 23.08: Real time audio spectrum analyzer
 x11-misc/sent 1.0.1: My fork from suckless sent
