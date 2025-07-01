@@ -13,7 +13,7 @@ S="${WORKDIR}/dwm-v6.5"
 
 LICENSE="MIT"
 SLOT="10"
-IUSE="tcc"
+IUSE="tcc focus"
 KEYWORDS="amd64"
 RESTRICT="mirror"
 
@@ -31,6 +31,11 @@ DEPEND="
 BDEPEND="tcc? ( dev-lang/tcc )"
 
 src_prepare() {
+
+	if use focus; then
+		PATCHES=( "${FILESDIR}"/focusonnetactive-6.2.patch )
+	fi
+
 	default
 
 	sed -i \
