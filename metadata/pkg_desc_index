@@ -6,6 +6,7 @@ sci-electronics/sosc 1.0 9999: Simple oscilloscope
 x11-misc/notify 2.1: Simple notification daemon
 x11-misc/rtspeccy 23.08: Real time audio spectrum analyzer
 x11-misc/sent 1.0.1: My fork from suckless sent
+x11-misc/slstatus 1.1: slstatus is a status monitor for window managers
 x11-misc/srun 0.1: Simple script runner
 x11-terms/st 0.9.2 0.9.2-r1: My fork from suckless st
 x11-wm/dwm 6.5 6.5-r1: My fork from suckless dwm
