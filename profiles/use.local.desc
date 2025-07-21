@@ -2,3 +2,10 @@
 # Please add your descriptions to your package's metadata.xml ONLY.
 # * generated automatically using pmaint *
 
+sci-electronics/sosc:tcc - Use tcc compiler.
+x11-misc/notify:tcc - Use tcc compiler.
+x11-misc/sent:tcc - Use tcc compiler.
+x11-misc/slstatus:tcc - Use tcc compiler.
+x11-misc/srun:tcc - Use tcc compiler.
+x11-wm/dwm:focus - Add focusonnetactive patch.
+x11-wm/dwm:tcc - Use tcc compiler.
