@@ -3,12 +3,13 @@
 
 EAPI=8
 
-inherit git-r3 toolchain-funcs
+inherit toolchain-funcs
 
 DESCRIPTION="Real time audio spectrum analyzer"
 HOMEPAGE="https://www.uninformativ.de/git/rtspeccy/file/README.html"
-EGIT_REPO_URI="https://uninformativ.de/git/rtspeccy.git"
-EGIT_COMMIT="v23.08"
+SRC_URI="https://www.uninformativ.de/git/rtspeccy/archives/rtspeccy-v23.08.tar.gz"
+
+S="${WORKDIR}/rtspeccy-v23.08"
 
 LICENSE="GPL-3"
 SLOT="0"
