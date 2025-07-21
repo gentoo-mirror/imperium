@@ -1,12 +1,11 @@
-BDEPEND=>=dev-vcs/git-1.8.2.1[curl]
-DEFINED_PHASES=compile install prepare unpack
+DEFINED_PHASES=compile install prepare
 DESCRIPTION=Real time audio spectrum analyzer
 EAPI=8
 HOMEPAGE=https://www.uninformativ.de/git/rtspeccy/file/README.html
-INHERIT=git-r3 toolchain-funcs
+INHERIT=toolchain-funcs
 KEYWORDS=amd64
 LICENSE=GPL-3
-PROPERTIES=live
 SLOT=0
-_eclasses_=git-r3	875eb471682d3e1f18da124be97dcc81	toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0
-_md5_=c80a8db4a29f179755ce5abb819e2550
+SRC_URI=https://www.uninformativ.de/git/rtspeccy/archives/rtspeccy-v23.08.tar.gz
+_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0
+_md5_=c92b5e0d93dda121d85fc93e98553d72
