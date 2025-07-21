@@ -8,4 +8,11 @@
 	<upstream>
 		<remote-id type="gitlab">HansvonHohenstaufen/dwm</remote-id>
 	</upstream>
+	<description>
+	My fork from suckless dwm.
+	</description>
+	<use>
+		<flag name="focus">Add focusonnetactive patch.</flag>
+		<flag name="tcc">Use tcc compiler.</flag>
+	</use>
 </pkgmetadata>

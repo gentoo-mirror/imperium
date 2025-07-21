@@ -8,4 +8,7 @@
 	<upstream>
 		<remote-id type="gitlab">HansvonHohenstaufen/srun</remote-id>
 	</upstream>
+	<use>
+		<flag name="tcc">Use tcc compiler.</flag>
+	</use>
 </pkgmetadata>
