@@ -5,4 +5,7 @@
 		<email>Hohenstaufen@protonmail.com</email>
 		<name>Hans von Hohenstaufen</name>
 	</maintainer>
+	<use>
+		<flag name="tcc">Use tcc compiler.</flag>
+	</use>
 </pkgmetadata>
