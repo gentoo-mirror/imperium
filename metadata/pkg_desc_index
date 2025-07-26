@@ -1,4 +1,5 @@
 app-misc/hcommand 0.1 9999: Simple fast command helper
+app-misc/mdp 1.0.8: A command-line based markdown presentation tool
 app-misc/no-more-secrets 1.0.1: Recreate decrypting text from 1992 movie 'Sneakers'
 app-misc/scompiler 2.0 9999: Simple fast compiler helper
 app-misc/standardfiles 5.1 9999: Program to convert video, audio and images to standard files
