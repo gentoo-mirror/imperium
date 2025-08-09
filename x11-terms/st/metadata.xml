@@ -8,4 +8,7 @@
 	<upstream>
 		<remote-id type="gitlab">HansvonHohenstaufen/st</remote-id>
 	</upstream>
+	<description>
+	My fork from suckless st.
+	</description>
 </pkgmetadata>
