@@ -1,0 +1,13 @@
+diff --git a/src/picom.c b/src/picom.c
+index d45b8ff6..213b073a 100644
+--- a/src/picom.c
++++ b/src/picom.c
+@@ -764,7 +764,7 @@ static bool paint_preprocess(session_t *ps, bool *animation, struct win **out_bo
+ 			add_damage_from_win(ps, w);
+ 		}
+ 
+-		if (win_has_frame(w)) {
++		if (win_has_frame(w) && !w->is_focused) {
+ 			w->frame_opacity = ps->o.frame_opacity;
+ 		} else {
+ 			w->frame_opacity = 1.0;
