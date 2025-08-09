@@ -7,6 +7,7 @@ app-office/libreoffice 25.2.5.2: A full office productivity suite
 app-portage/updategentoo 5.0 5.2 5.3 9999: Simple program to update gentoo
 sci-electronics/sosc 1.0 9999: Simple oscilloscope
 x11-misc/notify 2.1: Simple notification daemon
+x11-misc/picom 12.5: A lightweight compositor for X11 (previously a compton fork)
 x11-misc/rtspeccy 23.08: Real time audio spectrum analyzer
 x11-misc/sent 1.0.1: My fork from suckless sent
 x11-misc/slstatus 1.1: slstatus is a status monitor for window managers

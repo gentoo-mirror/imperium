@@ -13,6 +13,10 @@ app-office/libreoffice:pdfimport - Enable PDF import via the Poppler library
 app-office/libreoffice:vulkan - Enable Vulkan usage via the skia library (clang recommended)
 sci-electronics/sosc:tcc - Use tcc compiler.
 x11-misc/notify:tcc - Use tcc compiler.
+x11-misc/picom:doc - Build documentation and man pages (requires app-text/asciidoc)
+x11-misc/picom:drm - Enable support for using drm for vsync
+x11-misc/picom:focus - Apply patch to change frame in focused and unfocused windows
+x11-misc/picom:opengl - Enable features that require opengl (opengl backend, and opengl vsync methods)
 x11-misc/sent:tcc - Use tcc compiler.
 x11-misc/slstatus:tcc - Use tcc compiler.
 x11-misc/srun:tcc - Use tcc compiler.
