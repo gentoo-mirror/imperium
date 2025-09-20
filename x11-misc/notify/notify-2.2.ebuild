@@ -14,7 +14,7 @@ S="${WORKDIR}/notify-v2.2"
 LICENSE="MIT"
 SLOT="0"
 IUSE="tcc"
-KEYWORDS="amd64"
+KEYWORDS="~amd64"
 RESTRICT="mirror"
 
 DEPEND="x11-misc/dzen"
@@ -23,6 +23,11 @@ BDEPEND="tcc? ( dev-lang/tcc )"
 
 src_prepare() {
 	default
+
+	if use !elibc_musl; then
+		echo "Only compile in musl profile"
+		die
+	fi
 
 	sed -i \
 		-e 's|^ @|  |g' \
