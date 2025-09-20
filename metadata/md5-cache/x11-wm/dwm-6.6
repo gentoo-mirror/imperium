@@ -1,0 +1,16 @@
+BDEPEND=tcc? ( dev-lang/tcc )
+DEFINED_PHASES=compile install postinst prepare
+DEPEND=media-libs/fontconfig x11-libs/libX11 >=x11-libs/libXft-2.3.5 x11-libs/libXinerama !!x11-wm/dwm:0 x11-base/xorg-proto
+DESCRIPTION=My fork from suckless dwm
+EAPI=8
+HOMEPAGE=https://gitlab.com/HansvonHohenstaufen/dwm
+INHERIT=savedconfig toolchain-funcs
+IUSE=tcc focus savedconfig
+KEYWORDS=amd64
+LICENSE=MIT
+RDEPEND=media-libs/fontconfig x11-libs/libX11 >=x11-libs/libXft-2.3.5 x11-libs/libXinerama !!x11-wm/dwm:0
+RESTRICT=mirror
+SLOT=10
+SRC_URI=https://gitlab.com/HansvonHohenstaufen/dwm/-/archive/v6.6/dwm-v6.6.tar.gz
+_eclasses_=portability	a39e3d646f76cb45d06b44cc1144b8d4	savedconfig	b9131abe556ad2ea96c01b06d658d363	toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0
+_md5_=20131b12ef5fc112535c0298d88f2e37
