@@ -7,5 +7,5 @@ KEYWORDS=amd64
 LICENSE=GPL-3
 SLOT=0
 SRC_URI=https://www.uninformativ.de/git/rtspeccy/archives/rtspeccy-v23.08.tar.gz
-_eclasses_=toolchain-funcs	a0b29008c671a362b505f96fa80ce9c0
+_eclasses_=toolchain-funcs	98d9f464d912ae6b7316fb8a3721f5db
 _md5_=c92b5e0d93dda121d85fc93e98553d72
