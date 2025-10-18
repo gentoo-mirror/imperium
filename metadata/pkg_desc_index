@@ -4,7 +4,7 @@ app-misc/no-more-secrets 1.0.1: Recreate decrypting text from 1992 movie 'Sneake
 app-misc/scompiler 2.0 2.1 9999: Simple fast compiler helper
 app-misc/standardfiles 6.1 9999: Program to convert video, audio and images to standard files
 app-office/libreoffice 25.2.5.2 25.2.6.2: A full office productivity suite
-app-portage/updategentoo 5.0 5.2 5.3 9999: Simple program to update gentoo
+app-portage/updategentoo 5.0 5.2 5.3 5.4 9999: Simple program to update gentoo
 sci-electronics/sosc 1.0 9999: Simple oscilloscope
 x11-misc/notify 2.1 2.2: Simple notification daemon
 x11-misc/picom 12.5: A lightweight compositor for X11 (previously a compton fork)
