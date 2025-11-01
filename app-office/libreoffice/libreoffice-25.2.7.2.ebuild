@@ -233,7 +233,6 @@ COMMON_DEPEND="${PYTHON_DEPS}
 		gtk4? ( gui-libs/gtk:4[wayland] )
 	)
 "
-
 # FIXME: cppunit should be moved to test conditional
 #        after everything upstream is under gbuild
 #        as dmake execute tests right away
@@ -301,6 +300,7 @@ PATCHES=(
 	# git master
 	"${FILESDIR}/${PN}-25.2-unused-qt6network.patch"
 	"${FILESDIR}/${PN}-25.2.4.3-gcc16.patch"
+	"${FILESDIR}/${PN}-25.2.6.2-poppler-25.09.patch"
 
 	# add qt6 backend as possible fallback for gtk-based desktop environments:
 	# https://bugs.gentoo.org/950170
